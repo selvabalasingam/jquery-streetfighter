@@ -17,12 +17,12 @@ body {
     height: 494px;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
   width: 659px;
   height: 494px;
 }
 
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
   display: none;
 } 
 
@@ -38,23 +38,17 @@ body {
   background-image: url('../images/ryu-throwing-hadouken.png');
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-cool{
+  background-image: url('../images/ryu-cool.gif');
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
   background-repeat: no-repeat;
 }
 
-.hadouken {
-  background-image: url('../images/hadouken.gif');
-  width: 156px; 
-  height: 90px;
-  display: none;
-  float: left;
-  position: absolute;
-  z-index: 10;
-}
-
-* { /* This will put a red outline around all of your DOM elements */
+/* * {  This will put a red outline around all of your DOM elements 
   outline: red 1px solid;
-}
+}*/
 
 .hadouken {
   background-image: url('../images/hadouken.gif');
@@ -63,10 +57,32 @@ body {
   /*display: none;*/
   position: absolute;
   z-index: 10;
-  top: 0px;
-  left: 0px;
+  top: 150px;
+  left: 250px;
   float: left;
 }
 
+.intro {
+  float: left;
+  font-family: helvetica, sans-serif;
+  font-size: 1.5em;
+  padding-left: 50em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  letter-spacing: .1em;
+}
 
+.instructions {
+  float: right;
+  font-family: helvetica, sans-serif;
+  font-size: 1.25em;
+  padding-left: 60em;
+  padding-bottom: 0.5em;
+  letter-spacing: .1em;
+}
+
+.keys {
+  color: #E60000;
+  font-weight: bold;
+}
 
